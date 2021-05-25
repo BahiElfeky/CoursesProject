@@ -13,12 +13,7 @@ struct HomeContentView: View {
     @State var displayedCourses = courses
     
     var body: some View {
-        let binding = Binding<String>(get: {
-                    self.text
-                }, set: {
-                    self.text = $0
-                    // do whatever you want here
-                })
+        
         VStack{
             HStack{
                 VStack(alignment: .leading, spacing: 10) {
@@ -53,6 +48,18 @@ struct HomeContentView: View {
                             .foregroundColor(.gray)
                         
                         TextField("Search Courses", text: $text)
+                    }
+                    .onChange(of: text){
+                        if $0 == "" {
+                            displayedCourses = courses
+                            return
+                        }
+                        displayedCourses = []
+                        for course in courses{
+                            if course.name.contains($0){
+                                displayedCourses.append(course)
+                            }
+                        }
                     }
                     .padding(.vertical, 12)
                     .padding(.horizontal)
@@ -106,7 +113,7 @@ struct Course: Identifiable{
     var asset: String
 }
 
-var courses = [
+let courses: [Course] = [
     Course(name: "Coding", numCourse: 12, asset: "coding"),
     Course(name: "Trading", numCourse: 4, asset: "coding"),
     Course(name: "Marketing & Digital Marketing", numCourse: 10, asset: "coding"),
