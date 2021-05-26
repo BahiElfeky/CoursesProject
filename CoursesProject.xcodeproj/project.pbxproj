@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041C566B265E33520016409F /* CustomMaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C566A265E33520016409F /* CustomMaterialTextField.swift */; };
 		04BF96A4265CEA58000F002B /* CoursesProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BF96A3265CEA58000F002B /* CoursesProjectApp.swift */; };
 		04BF96A6265CEA58000F002B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BF96A5265CEA58000F002B /* HomeView.swift */; };
 		04BF96A8265CEA5B000F002B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BF96A7265CEA5B000F002B /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		041C566A265E33520016409F /* CustomMaterialTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMaterialTextField.swift; sourceTree = "<group>"; };
 		04BF96A0265CEA58000F002B /* CoursesProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoursesProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BF96A3265CEA58000F002B /* CoursesProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesProjectApp.swift; sourceTree = "<group>"; };
 		04BF96A5265CEA58000F002B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				04BF96B3265CF2D5000F002B /* CourseCardView.swift */,
 				04BF96B7265CFEB3000F002B /* CustomTabView.swift */,
 				04BF96BC265D0049000F002B /* TabButtonView.swift */,
+				041C566A265E33520016409F /* CustomMaterialTextField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04BF96A6265CEA58000F002B /* HomeView.swift in Sources */,
+				041C566B265E33520016409F /* CustomMaterialTextField.swift in Sources */,
 				04BF96A4265CEA58000F002B /* CoursesProjectApp.swift in Sources */,
 				04BF96C3265D16BB000F002B /* HomeScreen.swift in Sources */,
 				04BF96BD265D0049000F002B /* TabButtonView.swift in Sources */,

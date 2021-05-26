@@ -100,6 +100,26 @@ struct ContentView_Previews: PreviewProvider {
         Group {
             HomeContentView()
         }
+        .previewDevice(PreviewDevice(rawValue: "iPhone 12"))
+        .previewDisplayName("iPhone 12")
+        
+        Group {
+            HomeContentView()
+        }
+        .previewDevice(PreviewDevice(rawValue: "iPhone SE"))
+        .previewDisplayName("iPhone SE")
+        
+        Group {
+            HomeContentView()
+        }
+        .previewDevice(PreviewDevice(rawValue: "iPhone 12 Pro Max"))
+        .previewDisplayName("iPhone Pro Max")
+        
+        Group {
+            HomeContentView()
+        }
+        .previewLayout(.sizeThatFits)
+        
     }
 }
 

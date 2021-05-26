@@ -25,8 +25,10 @@ struct TabButtonView: View {
     }
 }
 
-struct TabButtonView_Previews: PreviewProvider {
-    static var previews: some View {
-        VStack{}
-    }
-}
+//struct TabButtonView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        Group{
+//            TabButtonView(image: "home", selectedTab: $name)
+//        }
+//    }
+//}
